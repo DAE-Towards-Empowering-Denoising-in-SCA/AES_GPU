@@ -11,7 +11,7 @@ key = hex2dec(key);
     
 shiftrow = [1,6,11,16,5,10,15,4,9,14,3,8,13,2,7,12];
 
-attackByte = 2;
+attackByte = 1;
 
 v = bitxor( cipher(:,shiftrow(attackByte)), key(shiftrow(attackByte)));
 v = Sbox_inv( v + 1 )';
